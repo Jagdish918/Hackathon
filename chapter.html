@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chap.css">
+    <title>chapters</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all anchor tags on the page
+            var anchors = document.querySelectorAll('a');
+            
+            // Attach a click event handler to each anchor tag
+            anchors.forEach(function(anchor) {
+                anchor.addEventListener('click', function(event) {
+                    // Prevent the default behavior of the link (i.e., navigating to a new page)
+                    event.preventDefault();
+                    
+                    // Get the href attribute of the clicked anchor tag
+                    var contentHref = this.getAttribute('href');
+                    
+                    // Redirect to the targetHref
+                    window.location.href = contentHref;
+                });
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+    <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+            <h3><b>Py</b>Jungle</h3>
+        </div>
+        <div class="sticky-nav-options">
+            <a href="index.html">Home</a>
+            <a href="chapter.html">Chapters</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <img src="1.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data1">Working with Strings</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card">
+            <img src="2.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data2">Simple Input and Output Statements</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card">
+            <img src="3.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data3">Python Functions and Modules</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card">
+            <img src="4.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data4" >Loops in Python</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card1">
+            <img src="5.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data5">Data File Handling</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card2">
+            <img src="6.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data6">Recursion</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card3">
+            <img src="7.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data7">Linear and Binary search</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card">
+            <img src="8.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data8">Call by value function</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card">
+            <img src="9.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data9">List</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card">
+            <img src="10.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data10">Dictionary</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+        <div class="card">
+            <img src="11.jpg" class="card-image">
+            <a class="card-title" href="content.html#Data11"    >Tuples</a>
+            <p class="card-info">Your daily updated of most played...</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

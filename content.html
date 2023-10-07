@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="content.css">
+</head>
+
+<body>
+    <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+            <h3><b>Py</b>Jungle</h3>
+        </div>
+        <div class="sticky-nav-options">
+            <a href="index.html">Home</a>
+            <a href="chapter.html">Chapters</a>
+            <a href="About Us.html">About Us</a>
+        </div>
+    </div>
+    <!-- navbar ends here -->
+
+    <div>
+        <div class="content" id="Data1">
+            <h1>Working with Strings</h1>
+            <p>Strings are a fundamental data type in Python and can be used to store and manipulate text. Here are some
+                common operations and tasks you can perform with strings in Python:
+
+            </p>
+            <h2>Creating Strings:</h2>
+<p>You can create strings in Python by enclosing text in single quotes (') or double quotes ("). For example:</p>
+            <pre class="code">
+                <code class="a">
+                    single_quoted_string = 'This is a single-quoted string.'
+                    double_quoted_string = "This is a double-quoted string."
+</code>
+            </pre>
+            <h2>String Concatenation:</h2>
+            <p>You can concatenate (combine) strings using the + operator:</p>
+            <pre class="code">
+                <code class="a">
+                    str1 = "Hello"
+                    str2 = "World"
+                    result = str1 + " " + str2  # Concatenate with a space in between
+                    print(result)  # Output: "Hello World"
+                </code>
+            </pre>
+            <h2>String Indexing:</h2>
+            <p>Strings are indexed, meaning you can access individual characters by their position (index) within the string. Indexing starts at 0 for the first character:</p>
+            <pre class="code">
+                <code class="a">
+                    my_string = "Python"
+                    first_char = my_string[0]  # Access the first character ('P')             
+                </code>
+            </pre>
+            <h2>String Slicing:</h2>
+            <p>You can extract a portion of a string using slicing. Slicing allows you to specify a range of indices to extract a substring:    </p>
+            <pre class="code">
+                <code class="a">
+                    my_string = "Python"
+                    substring = my_string[1:4]  # Extracts characters at index 1, 2, and 3 ('yth')                 
+                </code>
+            </pre>
+            <h2>String Length:</h2>
+            <p>You can find the length (number of characters) in a string using the len() function:</p>
+            <pre class="code">
+                <code class="a">
+                    my_string = "Hello, World!"
+                    length = len(my_string)  # Length is 13
+                </code>
+            </pre>
+            <h2>String Methods:</h2>
+            <p>Python provides various methods for working with strings, such as split(), strip(), lower(), upper(), replace(), and more. These methods allow you to manipulate and modify strings as needed.</p>
+            <pre class="code">
+                <code class="a">
+                    my_string = "   Hello, World!   "
+                    stripped = my_string.strip()  # Removes leading and trailing spaces
+                </code>
+            </pre>
+            <h2>String Formatting:</h2>
+            <p>You can format strings using f-strings (Python 3.6+) or the format() method:</p>
+            <pre class="code">
+                <code class="a">
+                    name = "Alice"
+                    age = 30
+                    formatted_string = f"My name is {name} and I am {age} years old."
+
+                </code>
+            </pre>
+            <h2>String Escape Characters:</h2>
+            <p>Python uses escape characters to represent special characters within a string. For example, \n represents a newline, and \" represents a double quote:</p>
+            <pre class="code">
+                <code class="a">
+                    my_string = "This is a line.\nThis is a new line."
+                </code>
+            </pre>
+
+        </div>
+
+
+        <!-- 1 data -->
+        <br>
+        <div>
+            <div class="content" id="Data2">
+                <h1>Simple Input and Output Statements</h1>
+                <p>In Python, you can use the input() function for getting user input and the print() function for displaying output. Here's how to use them:</p>
+                <h2>Input Statements:</h2>
+                <h2>Using input():</h2>
+                <p>The input() function is used to accept user input as a string. You can then convert the input to the desired data type if needed.</p>
+                <pre class="code">
+                    <code class="a">
+                        user_input = input("Enter your name: ")
+                        print("Hello, " + user_input + "!")                        
+                    </code>
+                </pre>
+                <p>In this example, the program prompts the user to enter their name, and the input is stored in the variable user_input. It is then displayed as part of a greeting.</p>
+                <h2>Output Statements:</h2>
+                <h2>Using print():</h2>
+                <p>The print() function is used to display output in Python..</p>
+                <pre class="code">
+                    <code class="a">
+                        print("Hello, World!")                       
+                    </code>
+                </pre>
+                <p>You can print strings, variables, and expressions using print(). For example:</p>
+                <pre class="code">
+                    <code class="a">
+                        name = "Alice"
+                        age = 30
+                        print("My name is", name, "and I am", age, "years old.")
+                    </code>
+                </pre>
+                <p>In this example, variables are combined with strings using commas in the print() statement.</p>
+                <h2>Formatted Output:</h2>
+                <p>You can format the output using f-strings (Python 3.6+), which allow you to embed expressions inside string literals.</p>
+                <pre class="code">
+                    <code class="a">
+                        pname = "Bob"
+                        age = 25
+                        print(f"My name is {name} and I am {age} years old.")                                             
+                    </code>
+                </pre>
+                <p>Alternatively, you can use the .format() method to format strings:</p>
+                <pre class="code">
+                    <code class="a">
+                        name = "Charlie"
+                        age = 35
+                        print("My name is {} and I am {} years old.".format(name, age))
+                                             
+                    </code>
+                    </pre>
+                    <p>These are the basic input and output statements in Python. They allow you to interact with users by receiving input and displaying information in your programs.</p>
+                </div>
+            </div>
+
+            <!-- 2 data -->
+            <br>
+            <div>
+                <div class="content" id="Data3">
+                    <h1>Python Functions and Modules</h1>
+                    <p>In Python, functions and modules are important concepts for organizing and structuring your code, making it more modular, reusable, and maintainable. Here's an overview of Python functions and modules:</p>
+                    <h2>Functions:</h2>
+                    <p>A function in Python is a reusable block of code that performs a specific task or set of tasks. Functions are defined using the def keyword, followed by the function name and a set of parameters enclosed in parentheses. Here's the basic syntax of a function:</p>
+                    <pre class="code">
+                        <code class="a">
+                            def function_name(parameter1, parameter2, ...):
+                            # Function code goes here
+                            # ...
+                            return result  # Optional
+
+                        </code>
+                    </pre>
+                    <p>function_name: This is the name of the function.</p>
+                    <p>parameters: These are values that the function can accept as input. Parameters are optional, and a function can have zero or more of them.</p>
+                    <p>return: A function can optionally return a value using the return statement. If no return statement is used, the function returns None by default.</p>
+                    <h2>Example of a simple function:</h2>
+                    <pre class="code">
+                        <code class="a">
+                        def greet(name):
+                            return f"Hello, {name}!"
+                        
+                        message = greet("Alice")
+                        print(message)  # Output: "Hello, Alice!"
+                        
+                        </code>
+                    </pre>
+                    <h2>Modules:</h2>
+                    <p>A module is a Python file that contains a collection of functions, classes, and variables. Modules are used to organize code into separate files, making it easier to manage and reuse code. You can create your own modules or use built-in Python modules and libraries.</p>
+                    <p>To use a module in your Python script, you need to import it using the import statement. Here's the basic syntax:</p>
+                    <pre class="code">
+                        <code class="a">
+                            import module_name
+                        </code>
+                    </pre>
+                    <p>For example, to import the math module, you would use:</p>
+                    <pre class="code">
+                        <code class="a">
+                            import math
+
+                            result = math.sqrt(25)
+                            print(result)  # Output: 5.0
+                        </code>
+                    </pre>
+                    <p>You can also import specific functions or variables from a module using the from keyword:</p>
+                    <pre class="code">
+                        <code class="a">
+                            from module_name import function_name
+
+                            result = function_name()
+                        </code>
+                    </pre>
+                    <p>For example, to import the sqrt function from the math module:</p>
+                    <pre class="code">
+                        <code class="a">
+                            from math import sqrt
+
+                            result = sqrt(25)
+                            print(result)  # Output: 5.0
+                        </code>
+                    </pre>
+
+                </div>
+                <!-- 3 data -->
+                <br>
+                <div>
+                    <div class="content" id="Data4">
+                        <h1>Loops in Python</h1>
+                        <p>Certainly! Loops in Python are used to repeatedly execute a block of code until a certain condition is met. They help in automating repetitive tasks and make the code more concise. There are two main types of loops in Python: for loops and while loops.</p>
+                        <h2>For Loops:</h2>
+                        <p>For loops are used for iterating over a sequence (such as a list, tuple, string, dictionary, or set). The basic syntax is:</p>
+                        <pre class="code">
+                            <code class="a">
+                                fruits = ["apple", "banana", "cherry"]
+                                for fruit in fruits:
+                                    print(fruit)
+                            </code>
+                        </pre>
+                        <h2>While Loops:</h2>
+                        <p>or loops are used for iterating over a sequence (such as a list, tuple, string, dictionary, or set). The basic syntax is:</p>
+                        <pre class="code">
+                            <code class="a">
+                                count = 0
+                                while count < 3:
+                                    print("Count is", count)
+                                    count += 1
+
+                            </code>
+                        </pre>
+                        <h1>Important Notes:</h1>
+                        <h2>Indentation:</h2>
+                        <p>In Python, indentation is crucial to indicate the block of code that belongs to the loop. It is typically four spaces or a tab.</p>
+                        <h2>Infinite Loops:</h2>
+                        <p>Be careful with while loops to avoid infinite loops. Make sure to include a mechanism to break out of the loop.</p>
+                        <h2>Range Function:</h2>
+                        <p>The range() function is often used with for loops to generate a sequence of numbers.</p>
+                    </div>
+                    <br>
+                    <!-- 4 data -->
+                    <div>
+                        <div class="content" id="Data5">
+                            <h1>Data File Handling</h1>
+                            <p>This involves reading from and writing to files, which is a common task in programming for tasks such as data storage and retrieval. The primary functions for file handling in Python are open(), read(), write(), and close().</p>
+                            <h2>Reading from a File:</h2>
+                            <pre class="code">
+                                <code class="a">
+                                    with open('example.txt', 'r') as file:
+                                    # Read the entire contents of the file
+                                    content = file.read()
+                                    print(content)
+                                </code>
+                            </pre>
+                            <p>In this example, open('example.txt', 'r') opens the file named 'example.txt' in read mode. The with statement is used to ensure that the file is properly closed after reading its content.</p>
+                            <h2>Writing to a File:</h2>
+                            <pre class="code">
+                                <code class="a">
+                                    with open('example_write.txt', 'w') as file:
+                                    # Write data to the file
+                                    file.write('Hello, this is an example of file writing.')
+                                </code>
+                            </pre>
+                            <p>In this example, open('example_write.txt', 'w') opens the file named 'example_write.txt' in write mode. If the file doesn't exist, it will be created. If it already exists, its previous content will be overwritten.</p>
+                            <h2>Appending to a File:</h2>
+                            <pre class="code">
+                                <code class="a">
+                                    with open('example_append.txt', 'a') as file:
+                                    # Append data to the file
+                                    file.write('\nThis line is appended to the file.')
+                                
+                                </code>
+                            </pre>
+                            <p>In this example, open('example_append.txt', 'a') opens the file named 'example_append.txt' in append mode. If the file doesn't exist, it will be created. If it already exists, new data will be added to the end of the file.</p>
+                            <h2>Reading Lines from a File:</h2>
+                            <pre class="code">
+                                <code class="a">
+                                    with open('example_lines.txt', 'r') as file:
+                                    lines = file.readlines()
+                                    for line in lines:
+                                    print(line.strip()) 
+                                
+                                </code>
+                            </pre>
+                            <p>In this example, readlines() is used to read all lines of the file into a list.</p>
+                            <h2>Closing a File:</h2>
+                            <p>In all the examples, the with statement is used. It automatically closes the file once the indented block is exited. However, you can also close a file explicitly:</p>
+                            <pre class="code">
+                                <code class="a">
+                                    file = open('example.txt', 'r')
+                                    content = file.read()
+                                    file.close()
+                                
+                                </code>
+                            </pre>
+                            <p>Remember that it's good practice to use the with statement as it takes care of closing the file for you.
+
+                                File handling in Python is quite flexible, supporting various modes and formats. You can handle different types of files such as text files, CSV files, JSON files, etc., using appropriate functions and libraries.</p>
+                            
+                        </div>
+                        <!-- 5 data -->
+                        <br>
+                        <div>
+                            <div class="content" id="Data6">
+                                <h1>Recursion</h1>
+                                <p>Recursion in Python is a programming concept where a function calls itself in its own definition. Recursive functions break down a problem into smaller instances of the same problem and solve each instance independently. Recursion continues until it reaches a base case, which is a condition where the function stops calling itself.</p>
+                                <h2>Let's explore a simple example of a recursive function to calculate the factorial of a number:</h2>
+                                <pre class="code">
+                                    <code class="a">
+                                        def factorial(n):
+                                        if n == 0 or n == 1:
+                                            return 1
+                                        else:
+                                            return n * factorial(n-1)
+                                            result = factorial(5)
+                                            print("Factorial of 5:", result)
+                                    </code>
+                                </pre>
+                                <p>In this example, the factorial function calculates the factorial of a number n. The base case is when n is 0 or 1, in which case the function returns 1. Otherwise, it calls itself with the argument n-1, multiplying the result by n. The recursion continues until it reaches the base case.</p>
+                            </div>
+                            <!-- 6 data -->
+                            <br>
+                            <div>
+                                <div class="content" id="Data7">
+                                    <h1>Linear and Binary search</h1>
+                                    <p> Let's explore both linear search and binary search in Python with examples.</p>
+                                    <h2>1. Linear Search:</h2>
+                                    <pre class="code">
+                                        <code class="a">
+                                            def linear_search(arr, target):
+                                            for i in range(len(arr)):
+                                                if arr[i] == target:
+                                                    return i  # Return the index if the target is found
+                                            return -1  # Return -1 if the target is not found
+                                        
+                                        # Example usage
+                                        my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                        target_value = 5
+                                        
+                                        result = linear_search(my_list, target_value)
+                                        if result != -1:
+                                            print(f"Target {target_value} found at index {result}.")
+                                        else:
+                                            print(f"Target {target_value} not found.")
+                                        </code>
+                                    </pre>
+                                        <p>In this example,  the linear_search function iterates through each element in the list until it finds the target value or reaches the end of the list.</p>
+                                <h2>2. Binary Search:</h2>
+                                <p>Binary search is a more efficient search algorithm, but it requires the list to be sorted. It repeatedly divides the search space in half until the target is found or the search space is empty.</p>
+                                    <pre class="code">
+                                        <code class="a">
+                                            def binary_search(arr, target):
+                                            low, high = 0, len(arr) - 1
+                                        
+                                            while low <= high:
+                                                mid = (low + high) // 2
+                                        
+                                                if arr[mid] == target:
+                                                    return mid  # Return the index if the target is found
+                                                elif arr[mid] < target:
+                                                    low = mid + 1
+                                                else:
+                                                    high = mid - 1
+                                        
+                                            return -1  # Return -1 if the target is not found
+                                        sorted_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                        target_value = 5
+                                        
+                                        result = binary_search(sorted_list, target_value)
+                                        if result != -1:
+                                            print(f"Target {target_value} found at index {result}.")
+                                        else:
+                                            print(f"Target {target_value} not found.")
+                                        </code>
+                                    </pre>
+                                        <p>In this example, the binary_search function maintains two pointers (low and high) to determine the search space. It calculates the middle index (mid) and compares the middle element with the target. If the target is less than the middle element, the search space is narrowed to the left half; otherwise, it's narrowed to the right half.</p>
+                                        <p>Binary search is significantly faster than linear search for large sorted lists, as it reduces the search space exponentially with each iteration.</p>
+                                        <p>Both linear and binary searches have their use cases depending on the requirements and characteristics of the data.</p>
+                                   
+                                </div>
+                            </div>
+                                <!-- 7 data -->
+                                <br>
+                                <div>
+                                    <div class="content" id="Data8">
+                                        <h1>Call by value function</h1>
+                                        <p>In Python, when you pass a variable to a function, it follows a mechanism called "call by object reference" or "call by sharing." This means that the reference to the object is passed to the function, not the actual object itself. In simple terms, it's not "call by value" as you might see in some other programming languages.</p>
+                                        <h2>Let me illustrate this with an example:</h2>
+                                        <pre class="code">
+                                            <code class="a">
+                                                def modify_variable(x):
+                                                print("Inside the function - Before modification: ", x)
+                                                x = 10
+                                                print("Inside the function - After modification: ", x)
+                                            my_variable = 5
+                                            print("Outside the function - Before function call: ", my_variable)
+                                            
+                                            modify_variable(my_variable)
+                                            
+                                            print("Outside the function - After function call: ", my_variable)
+                                            </code>
+                                        </pre>
+                                        <p>In this example, modify_variable is a function that takes a parameter x. When you call this function with modify_variable(my_variable), the value of my_variable (which is 5) is passed to the function. Inside the function, a new local variable x is created, and the assignment x = 10 modifies the local variable within the function.</p>
+                                        <p>However, this modification does not affect the original variable my_variable outside the function. This is because integers in Python are immutable, and when the function modifies the value of x, it doesn't change the actual object in memory; it creates a new object with a new reference.</p>
+                                        <p>If you were working with mutable objects like lists or dictionaries, modifications made to the object inside the function would be reflected outside the function because the reference to the same object is passed.</p>
+                                    <pre class="code">
+                                        <code class="a">
+                                                    def modify_variable(x):
+                                                    print("Inside the function - Before modification: ", x)
+                                                    x = 10
+                                                    print("Inside the function - After modification: ", x)
+                                                my_variable = 5
+                                                print("Outside the function - Before function call: ", my_variable)
+                                                
+                                                modify_variable(my_variable)
+                                                
+                                                print("Outside the function - After function call: ", my_variable)
+                                                </code>
+                                            </pre>
+                                            <p>In this example, the list is mutable, and modifications made to the list inside the function are reflected in the original list outside the function.</p>
+                                        </div>
+                                    </div>
+                                    <!-- 8 data -->
+                                    <br>
+                                <div>
+                                    <div class="content" id="Data9">
+                                        <h1>List</h1>
+                                        <p>In Python, a list is a built-in data structure that is used to store a collection of items. Lists are ordered, mutable (meaning you can change their contents), and allow duplicate elements. Lists are defined by enclosing a comma-separated sequence of items within square brackets []. Here's an overview of lists in Python:
+                                        </p>
+                                        <h2>Creating Lists:</h2>
+                                        <p>You can create a list by enclosing a sequence of values within square brackets:</p>
+                                        <pre class="code">
+                                            <code class="a">
+                                                my_list = [1, 2, 3, 4, 5]
+                                            </code>
+                                        </pre>
+                                        <p>Lists can contain elements of different data types:</p>
+                                        <pre class="code">
+                                            <code class="a">
+                                                mixed_list = [1, "two", 3.0, True]
+                                            </code>
+                                        </pre>
+                                        <h2>Accessing Elements:</h2>
+                                        <p>You can access individual elements in a list using indexing. List indexing is zero-based, meaning the first element has an index of 0:</p>
+                                        <pre class="code">
+                                            <code class="a">
+                                                first_element = my_list[0]  # Accessing the first element
+                                                second_element = my_list[1]  # Accessing the second element            
+                                            </code>
+                                        </pre>
+                                        <p>You can also use negative indexing to access elements from the end of the list:</p>
+                                        <pre class="code">
+                                            <code class="a">
+                                                last_element = my_list[-1]  # Accessing the last element          
+                                            </code>
+                                        </pre>
+                                        <h2>Slicing Lists:</h2>
+                                        <p>You can extract a portion of a list using slicing. Slicing allows you to specify a start index, an end index (exclusive), and an optional step:</p>
+                                        <pre class="code">
+                                            <code class="a">
+                                                sublist = my_list[1:4]  # Elements from index 1 to 3: [2, 3, 4]            
+                                            </code>
+                                        </pre>
+                                        <h2>Modifying Lists:</h2>
+                                        <p>Lists are mutable, which means you can change their contents. You can modify individual elements, append new elements, insert elements at specific positions, or remove elements:    </p>
+                                        <pre class="code">
+                                            <code class="a">
+                                                my_list[0] = 10  # Modify the first element
+                                            my_list.append(6)  # Add an element to the end
+                                            my_list.insert(2, 7)  # Insert 7 at index 2
+                                            my_list.remove(4)  # Remove the first occurrence of 4
+                                            del my_list[3]  # Remove the element at index 3         
+                                            </code>
+                                        </pre>
+                                        <h2>List Methods:</h2>
+                                        <p>Lists come with a variety of built-in methods for common operations such as sorting, counting elements, and extending lists:
+                                    
+                                            len(my_list): Returns the number of elements in the list.
+                                            my_list.sort(): Sorts the list in ascending order (in-place).
+                                            my_list.reverse(): Reverses the order of elements in the list (in-place).
+                                            my_list.count(x): Returns the number of times x appears in the list.
+                                            my_list.extend(iterable): Extends the list by appending elements from another iterable (e.g., another list).</p>
+                                        
+                                        <h2>List Comprehensions:</h2>
+                                        <p>List comprehensions provide a concise way to create lists by applying an expression to each item in an iterable:</p>
+                                        <pre class="code">
+                                            <code class="a">
+                                                squares = [x**2 for x in range(1, 6)]  # [1, 4, 9, 16, 25]
+                                            </code>
+                                        </pre>
+                                        <p>Lists are widely used in Python for storing and manipulating collections of data. They are versatile and efficient, making them a fundamental data structure in the language.</p>                                        
+                                    
+                                    </div>
+                                </div>
+                                    
+                                    
+                                    <!-- list complete data -->
+                                        <!-- 9 data -->
+                                        <br>
+                                        <div>
+                                            <div class="content" id="Data10">
+                                                <h1>Dictionary</h1>
+                                                <p>In Python, a dictionary is a built-in data type used to store collections of data in the form of key-value pairs. Each key is associated with a corresponding value, and dictionaries are useful for mapping relationships between data. Dictionaries are defined using curly braces {} and consist of comma-separated key-value pairs, where each key is unique. Here's an overview of dictionaries in Python:
+                                                </p>
+                                                <h2>Creating a Dictionary:</h2>
+                                                <p>You can create a dictionary using curly braces {} and specifying key-value pairs as key: value:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        my_dict = {"name": "John", "age": 30, "city": "New York"}
+                                                    </code>
+                                                </pre>
+                                                <p>You can also create an empty dictionary and add key-value pairs later:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        empty_dict = {}
+                                                        empty_dict["key1"] = "value1"
+                                                        empty_dict["key2"] = "value2"            
+                                                    </code>
+                                                </pre>
+                                                <h2>Accessing Values:</h2>
+                                                <p>You can access the values in a dictionary by specifying the key inside square brackets or using the get() method. If the key doesn't exist, using get() will return None by default, while indexing with a nonexistent key will raise a KeyError unless a default value is provided.</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        name = my_dict["name"]  # Accessing value using key
+                                                        age = my_dict.get("age")  # Accessing value using get()
+                                                    </code>
+                                                </pre>
+                                                <h2>Modifying Values:</h2>
+                                                <p>You can change the value associated with a key by assigning a new value to it:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        my_dict["age"] = 31  # Update the age to 31             
+                                                    </code>
+                                                </pre>
+                                                <h2>Dictionary Methods:</h2>
+                                                <p>Dictionaries have various built-in methods for performing operations such as adding or removing key-value pairs, copying dictionaries, and more. Some common     methods include:
+                                            
+                                                    keys(): Returns a list of all keys in the dictionary.
+                                                    values(): Returns a list of all values in the dictionary.
+                                                    items(): Returns a list of key-value pairs (tuples) in the dictionary.
+                                                    pop(key): Removes the key-value pair with the specified key and returns the value.
+                                                    popitem(): Removes and returns an arbitrary key-value pair.
+                                                    clear(): Removes all key-value pairs from the dictionary.
+                                                </p>
+                                                
+                                                <h2>Checking for Key Existence:</h2>
+                                                <p>You can check if a key exists in a dictionary using the in keyword or the get() method:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        if "name" in my_dict:
+                                                        print("Key 'name' exists")
+                                                        if my_dict.get("country") is not None:
+                                                        print("Key 'country' exists")
+                                                    </code>
+                                                </pre>
+                                            
+                                                <h2>Dictionary Comprehensions:</h2>
+                                                <p>Like list comprehensions, Python supports dictionary comprehensions for creating dictionaries in a concise way:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        squares = {x: x**2 for x in range(1, 6)}
+                                                        # Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+                                            
+                                                    </code>
+                                                </pre>
+                                            
+                                                
+                                                <p>Dictionaries are commonly used for tasks where you need to associate data with keys, such as configuration settings, database records, and more. They are very efficient for lookups and offer a convenient way to organize and manipulate data in Python.</p>
+                                                
+                                            </div>
+                                        </div>
+                                            <!-- 10 data -->
+                                            <br>
+                                        <div>
+                                            <div class="content" id="Data11">
+                                                <h1>Tuples</h1>
+                                                <p>In Python, a tuple is a data structure that is similar to a list but is immutable, which means its elements cannot be modified once it is created. Tuples are defined by enclosing a comma-separated sequence of values within parentheses (). Here's a basic overview of tuples in Python:
+                                                </p>
+                                                <h2>Creating Tuples:</h2>
+                                                <p>You can create a tuple by enclosing elements in parentheses or by using the tuple() constructor:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        my_tuple = (1, 2, 3)
+                                                        another_tuple = tuple([4, 5, 6])            
+                                                    </code>
+                                                </pre>
+                                                <h2>Accessing Elements:</h2>
+                                                <p>You can access elements of a tuple using indexing, just like with lists. Indexing is zero-based, so the first element has an index of 0.</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        print(my_tuple[0])  # Output: 1
+                                                        print(my_tuple[1])  # Output: 2
+                                                    </code>
+                                                </pre>
+                                                <h2>Tuple Packing and Unpacking:</h2>
+                                                <p>You can create a tuple by simply separating values with commas, and Python will automatically pack them into a tuple.</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        my_packed_tuple = 1, 2, 3          
+                                                    </code>
+                                                </pre>
+                                                <p>You can also unpack a tuple into individual variables:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        a, b, c = my_tuple
+                                                        print(a)  # Output: 1
+                                                        print(b)  # Output: 2
+                                                    </code>
+                                                </pre>
+                                                <h2>Immutable Nature:</h2>
+                                                <p>Once a tuple is created, you cannot change its elements. However, you can create a new tuple with modifications.</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        my_tuple[0] = 10  # This will raise an error (TypeError: 'tuple' object does not support item assignment)           
+                                                    </code>
+                                                </pre>
+                                                <h2>Tuple Methods:</h2>
+                                                <p>Tuples have some built-in methods, including count() and index():  </p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        my_tuple = (1, 2, 2, 3, 4)
+                                                        count_2 = my_tuple.count(2)  # Count occurrences of 2
+                                                        index_3 = my_tuple.index(3)  # Find the index of the first occurrence of 3                  
+                                                    </code>
+                                                </pre>
+                                                <h2>Tuple Concatenation and Repetition:</h2>
+                                                <p>You can concatenate tuples using the + operator and repeat a tuple using the * operator:</p>
+                                                <pre class="code">
+                                                    <code class="a">
+                                                        tuple1 = (1, 2)
+                                                        tuple2 = (3, 4)
+                                                        concatenated_tuple = tuple1 + tuple2  # Output: (1, 2, 3, 4)
+                                                        repeated_tuple = tuple1 * 3  # Output: (1, 2, 1, 2, 1, 2)
+                                                    </code>
+                                                </pre>
+                                                <p>Tuples are often used for situations where you want to store a collection of items that should not be modified, such as coordinates, configuration settings, or as keys in dictionaries (since they are hashable).
+                                                </p>
+                                            </div>
+                                        </div>
+                                                <!-- 11 data -->
+                                            </div>
+                                            <script src="content.js"></script>
+
+</body>
+
+</html>
